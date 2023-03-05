@@ -1,0 +1,41 @@
+const Gallery = {
+  data() {
+    return {
+      category: '',
+      images: [
+        { index: 1,
+          src: "https://images.unsplash.com/photo-1620289052248-4fe8bd3a15de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDYzNjEyMQ&ixlib=rb-1.2.1&q=80&w=400",
+          category: "Dog"
+        },
+        { index: 2,
+          src: "https://images.unsplash.com/photo-1620194577171-aa10bc3cf62c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDcxMDIzNA&ixlib=rb-1.2.1&q=80&w=400",
+          category: "Cat"
+        },
+        { index: 3,
+          src: "https://images.unsplash.com/photo-1618233917025-0653aee1b870?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDcxMzMyMQ&ixlib=rb-1.2.1&q=80&w=400",
+          category: "Dog"
+        },
+        { index: 4,
+          src: "https://images.unsplash.com/photo-1620468799375-2606ba380c09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDcxMjkyMw&ixlib=rb-1.2.1&q=80&w=400",
+          category: "Cat"
+        },
+        { index: 5,
+          src: "https://images.unsplash.com/photo-1620196244884-ff187fd4bf99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDcxMzM3NQ&ixlib=rb-1.2.1&q=80&w=400",
+          category: "Cat"
+        },
+        { index: 6,
+          src: "https://images.unsplash.com/photo-1620106436438-f6d897e48013?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDcxMjgyNg&ixlib=rb-1.2.1&q=80&w=400",
+          category: "Dog"
+        },
+      ]
+    };
+  },
+  computed: {
+    filterByCategory: function () {
+      return this.images.filter(
+        (image) => !image.category.indexOf(this.category)
+      );
+    }
+  }
+};
+Vue.createApp(Gallery).mount("#app");
