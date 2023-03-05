@@ -1,2 +1,3 @@
-Portfolio Site<br>
+*Portfolio Site*
+
 Webデザイン演習で作成したポートフォリオサイトです。
