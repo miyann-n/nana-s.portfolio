@@ -1,0 +1,344 @@
+@charset "utf-8";
+/*ナビゲーションバー*/
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fff;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #4a95ff;
+    background-color: #4a95ff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #4a95ff;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    background-color: #696969;
+	border-radius: 3px;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #4a95ff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #4a95ff;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+/*方眼背景*/
+.box {
+	position: relative;
+	height: 100%;
+	bottom: 0;
+	background-image: linear-gradient(0deg, transparent calc(100% - 1px), #dcdcdc calc(100% - 1px)),
+					  linear-gradient(90deg, transparent calc(100% - 1px), #dcdcdc calc(100% - 1px));
+	background-size: 32px 32px;
+	background-repeat: repeat;
+	background-position: center center;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 0px;
+  }
+
+/*レスポンシブ*/
+@media screen and (min-width:1200px){
+	.box{
+		padding: 50px 50px;
+	}
+	.works_c{
+		margin: auto;
+	}
+}
+
+@media screen and (min-width:993px){
+	.box{
+		padding: 50px 50px;
+	}
+	.works_c{
+		padding: 0;
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width:768px){
+	.box{
+		padding: 50px 0px;
+	}
+	.container.works_c{
+		width: 735px;
+		margin: auto;
+		margin-bottom: 100px;
+	}
+	.col-sm-4{
+		padding: 0px;
+	}
+	.works_f{
+		margin: auto;
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width:767px){
+	.box{
+		padding: 50px 10px;
+	}
+}
+
+/*見出し*/
+h2.stitle{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-decoration: underline wavy;
+	text-decoration-color: #4a95ff;
+}
+
+/*Works*/
+.outer{
+	overflow: hidden;
+	width: 230px;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+	border-radius: 24px;
+	margin: auto;
+}
+
+.outer a{
+	color: #222;
+	transition: 0.3s ease-in-out;
+}
+
+.outer a:hover{
+	text-decoration: none;
+}
+
+.outer a:hover .section{
+	background-color: #222;
+	color: #fff;
+	transition: 0.3s ease-in-out;
+}
+
+.outer a:hover img{	
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+}
+
+.outer img{
+	width: 230px;
+	display: block;
+	transition-duration: 0.5s;
+}
+
+.col-sm-4{
+	margin-bottom:20px;
+	margin-bottom: 20px;
+}
+
+.works_c{
+	margin-bottom: 100px;
+}
+
+.section{
+	width: 230px;
+	background-color: #fff;
+	padding: 20px;
+}
+
+/*フッター*/
+.box{
+    min-height: 91.5vh;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+footer{
+	text-align: center;
+	padding: 30px;
+	background-color: #eee;
+	color: #222;
+}
+
+/*works*/
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.text-center{
+    text-align: center!important;
+}
+.text-right{
+    text-align: right!important;
+}
+.portfolio{
+    padding: 30px 7px;
+}
+.portfolio .section-title h1:before{
+    left: 30%;
+}
+.portfolio .filter-buttons{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.portfolio .filter-buttons ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.portfolio .filter-buttons ul li{
+    color: #777777;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 0px;
+}
+.portfolio .filter-buttons ul li.active{
+    color: #222;
+    border-bottom: 3px solid #4a95ff;
+}
+.portfolio .portfolio-gallery{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio .portfolio-gallery .item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    position: relative;
+    padding: 8px;
+  
+}
+.portfolio .portfolio-gallery .item .inner{
+    position: relative;
+}
+.portfolio .portfolio-gallery .item img{
+    width: 100%;
+    display: block;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .5);
+
+}
+ 
+@media(max-width:767px){
+ 
+    .portfolio .portfolio-gallery .item{
+        flex:0 0 50% ;
+        max-width: 50%;
+        position: relative;
+        padding:8px ;
+    }
+ 
+}
+@media(max-width:500px){
+ 
+    .portfolio .portfolio-gallery .item{
+        flex:0 0 100% ;
+        max-width: 100%; }
+}
+
+.item{
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+.sample-img img {
+  height: auto;
+  width: 100%;
+}
+.mask {
+  align-items: center; /* テキストの中央揃え */
+  background: rgba(0, 0, 0, .8); /* マスクの色(黒の50%) */
+  bottom: 0;
+  color: #fff; /* テキストの色 */
+  font-size: 20px;
+  display: flex; /* テキストの中央揃え */
+  height: auto;
+  justify-content: center; /* テキストの中央揃え */
+  left: 0;
+  opacity: 0; /* 最初は透明(非表示) */
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .6s ease; /* ゆっくりopacityのみへ変化させる */
+  width: 100%;
+}
+.mask:hover {
+  opacity: 1; /* hoverしたら透過しない(表示させる) */
+}
