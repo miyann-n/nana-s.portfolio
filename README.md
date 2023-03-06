@@ -7,6 +7,7 @@ Webデザイン演習で作成したポートフォリオサイトです。<br>
 <li>ユーザビリティ・アクセシビリティ部門　最優秀賞</li>
 <li>色彩部門　優秀賞</li>
 <ul>
+<br>
 を受賞しました。
 
 <https://miyann-n.github.io/nana-s.portfolio/>
